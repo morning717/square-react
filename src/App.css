@@ -1,0 +1,8 @@
+.App {
+    text-align: center;
+    background: black;
+    width: 1000px;
+    height: 1000px;
+    border:red solid thin;
+}
+
