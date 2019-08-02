@@ -9,7 +9,17 @@ import '../style/subfaceStyle.less'
 
      componentDidMount() {
          window.addEventListener('keydown',function (e) {
-             console.log(e);
+             // console.log(e);
+             switch (e.key) {
+                 case 'ArrowLeft':{
+                     console.log('左');
+                 }
+                 break;
+                 case 'ArrowRight':{
+                     console.log('右');
+                 }
+                 break;
+             }
          })
      }
 
@@ -38,7 +48,6 @@ import '../style/subfaceStyle.less'
      }
 
      render(){
-         console.table(this.map(5,4));
         return(
             <div>
                 {this.createMap()}
